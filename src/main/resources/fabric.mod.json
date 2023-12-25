@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "thalassophobia",
+	"version": "${version}",
+	"name": "Thalassophobia",
+	"description": "This is a deep sea horror mod for Minecraft Java Edition by Jekyll0RHyde!",
+	"authors": [
+		"Jekyll0RHyde"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/thalassophobia/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jekyll0rhyde.thalassophobia.Thalassophobia"
+		],
+		"client": [
+			"net.jekyll0rhyde.thalassophobia.ThalassophobiaClient"
+		],
+		"fabric-datagen": [
+			"net.jekyll0rhyde.thalassophobia.ThalassophobiaDataGenerator"
+		]
+	},
+	"mixins": [
+		"thalassophobia.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
